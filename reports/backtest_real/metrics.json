@@ -1,0 +1,32 @@
+{
+  "start_date": "2024-01-02",
+  "end_date": "2024-06-28",
+  "equity_points": 129,
+  "trades_count": 4,
+  "final_equity": 112042.62,
+  "cagr": 0.25090199410936664,
+  "annualized_volatility": 0.00794175175909942,
+  "sharpe_ratio": 28.204844184481455,
+  "sortino_ratio": 44.78058456667956,
+  "calmar_ratio": 363.26084333221564,
+  "max_drawdown": 0.0006906937500002095,
+  "recovery_time_days": 2.0,
+  "win_rate": 0.0,
+  "avg_win": 0.0,
+  "avg_loss": -1415.799,
+  "profit_factor": 0.0,
+  "expectancy": -1415.799,
+  "avg_holding_period_days": 0.0,
+  "worst_month": 0.010809793750000019,
+  "consecutive_losing_months": 0.0,
+  "monthly_return_5pct": 0.013304222911778397,
+  "equity_smoothness_score": 0.9902040443022075,
+  "rolling_sharpe_latest": 29.167975217549472,
+  "monthly_returns": {
+    "2024-02-29": 0.010809793750000019,
+    "2024-03-31": 0.026480547616874572,
+    "2024-04-30": 0.0270258663344638,
+    "2024-05-31": 0.027510811295390347,
+    "2024-06-30": 0.023281939558891906
+  }
+}

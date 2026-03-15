@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai_swing_trader"
+version = "0.1.0"
+description = "Algorithmic trading system for AI-driven swing trading workflows."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "ai_swing_trader contributors" }]
+dependencies = [
+  "pandas",
+  "numpy",
+  "pyyaml",
+  "scipy"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pre-commit",
+  "pytest",
+  "black",
+  "ruff"
+]
+
+[tool.setuptools]
+include-package-data = false
+packages = [
+  "ai_swing_trader",
+  "ai_swing_trader.core",
+  "ai_swing_trader.core.analytics",
+  "ai_swing_trader.core.config",
+  "ai_swing_trader.core.data",
+  "ai_swing_trader.core.strategy",
+  "ai_swing_trader.core.utils",
+  "ai_swing_trader.config",
+  "ai_swing_trader.infra"
+]
+
+[tool.setuptools.package-dir]
+ai_swing_trader = "."
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+python_files = ["test_*.py", "*_test.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
